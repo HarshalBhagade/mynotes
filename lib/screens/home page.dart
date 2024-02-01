@@ -12,8 +12,9 @@ class _home_pageState extends State<home_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('My Notes',style: TextStyle(color: Colors.brown)),backgroundColor: Colors.yellow,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(20),
+        child: AppBar(title: Text('My Notes',style: TextStyle(color: Colors.brown,fontSize: 18,fontWeight:FontWeight.bold)),backgroundColor: Colors.yellow.shade200,)
       ),
       body: Center(
         child: Padding(
